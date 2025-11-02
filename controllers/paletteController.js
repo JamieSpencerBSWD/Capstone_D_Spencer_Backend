@@ -11,7 +11,7 @@ const getPalettes = async (req, res) =>{
 }
 
 
-//get a single workout/post
+//get a single palette
 const getPalette = async(req,res)=>{
     const {id} = req.params
 

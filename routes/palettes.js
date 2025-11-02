@@ -11,21 +11,21 @@ const requireAuth = require('../middleware/requireAuth')
 
 const router = express.Router()
 
-// require auth for all workout routes
+// require auth for all palette routes
 router.use(requireAuth)
-//GET all workouts
+//GET all palettes
 router.get('/', getPalettes)
 
-//GET specific workout
+//GET specific palettes
 router.get('/:id', getPalette)
 
-//POST a new workout
+//POST a new palette
 router.post('/', createPalette)
 
-//DELETE a Palette
+//DELETE a palette
 router.delete('/:id', deletePalette)
 
-//UPDATE a workout
+//UPDATE a palette
 router.patch('/:id', updatePalette)
 
 module.exports = router
